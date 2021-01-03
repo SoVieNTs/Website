@@ -1,5 +1,5 @@
-const BUGS_CHANNEL = "https://discord.com/api/webhooks/765979356329017354/290k_5-OtOHeNlU--97t7w4t-m5SfTJmpyxwTNtbmO4J_RhSspkKKJL9Im0i9FJzbg-9";
-const SUGGEST_CHANNEL = "https://discord.com/api/webhooks/765979485744267295/AQxJreFrIa5wvW50WSAsgIqzkfHRkPXIBxeN9uODZ85UPRPC41zxpLtp7f_RYl4a-4Zz";
+const BUGS_CHANNEL = "https://discord.com/api/webhooks/795180218914439218/9y0f6Mip_GHlgjXxfddj7qmUZE_wE0RBIloTpbWIFI2NZCVTeb8iuzeK_yLbFJiga6WP";
+const SUGGEST_CHANNEL = "https://discord.com/api/webhooks/795180044866551839/uSL8aWwUqXdX2iQW4oyivwldmGxuqGAtiVOflxeqep16nsJ0iGIiNi0k5dBFxOedVq4C";
 changeView("about");
 
 function changeView(type, title) {
