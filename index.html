@@ -24,35 +24,6 @@
           <code class="navbutton" onClick="changeView('suggest')">Suggestion</code>
         </nav>
         <p>A moderation, fun Discord Bot with over 51+ 🤩 commands!</p>
-        <h4 id="status"> ~ Loading Status ~</h4>
-          <script>
-            // 1. Create a new XMLHttpRequest object
-            let xhr = new XMLHttpRequest();
-
-            // 2. Configure it: GET-request for the URL /article/.../load
-            xhr.open('GET', 'https://api.sovients.tk/user/752549122384593037');
-
-            // Send the request over the network.
-            xhr.send();
-
-            // This will be called after the response is received.
-            xhr.onload = function () {
-              if (xhr.status != 200) {
-                document.getElementById("status").innerHTML = `Currently ⚪️ Unavailable`;
-              } else { // show the result
-                const user = JSON.parse(xhr.responseText);
-                if (user.status != "offline") {
-                  document.getElementById("status").innerHTML = "Currently 🟣 Online";
-                } else {
-                  document.getElementById("status").innerHTML = "Currently 🔴 Offline";
-                }
-              }
-            };
-
-            xhr.onerror = function () {
-              document.getElementById("status").innerHTML = `Couldn't ⚪️ Connect`;
-            };
-          </script>
       </center>
     </header>
 
