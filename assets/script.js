@@ -17,7 +17,7 @@ function changeView(type, title) {
                     <p>Have you found a Bug? If so submit it here and join our Support Server to tell us more information, so we can make Fusion as perfect as possible.</p>
                         <input id="username" type="text" placeholder="Discord Username + Tag" class="field"><br><br>
                         <input id="text" type="text" placeholder="Bug to Report" class="field"><br><br>
-                        <button type="button" onClick="sendHook('${BUGS_CHANNEL}', 'username', 'text', 'Fusion Bugs', 'https://cdn.discordapp.com/avatars/752595663732211831/ef253574485aa8b67a66eb2a585e771e.png?size=512', 'Please specify a valid Discord username with Tag.', 'Please specify the bug you would like to report.', 'Fusion 🌀 Bug')" class="button">🚀 Report Bug</button>
+                        <button type="button" onClick="sendHook(`${BUGS_CHANNEL}`, 'username', 'text', 'Fusion Bugs', 'https://cdn.discordapp.com/avatars/752595663732211831/ef253574485aa8b67a66eb2a585e771e.png?size=512', 'Please specify a valid Discord username with Tag.', 'Please specify the bug you would like to report.', 'Fusion 🌀 Bug')" class="button">🚀 Report Bug</button>
                   `;
             break;
         case "suggest":
@@ -26,7 +26,7 @@ function changeView(type, title) {
                         <p>If you have any ideas that will improve Fusion, submit them here or join our Support Server.</p>
                             <input id="username" type="text" placeholder="Discord Username + Tag" class="field"><br><br>
                             <input id="text" type="text" placeholder="Suggestion to Submit" class="field"><br><br>
-                            <button type="button" onClick="sendHook('${SUGGEST_CHANNEL}', 'username', 'text', 'Fusion Suggestions', 'https://cdn.discordapp.com/avatars/752595663732211831/ef253574485aa8b67a66eb2a585e771e.png?size=512', 'Please specify a valid Discord username with Tag.', 'Please specify the suggestion you would like to submit!', 'Fusion 🌀 Suggestion')" class="button">🚀 Submit Suggestion</button>
+                                <button type="button" onClick="sendHook(`${SUGGEST_CHANNEL}`, 'username', 'text', 'Fusion Suggestions', 'https://cdn.discordapp.com/avatars/752595663732211831/ef253574485aa8b67a66eb2a585e771e.png?size=512', 'Please specify a valid Discord username with Tag.', 'Please specify the suggestion you would like to submit!', 'Fusion 🌀 Suggestion')" class="button">🚀 Submit Suggestion</button>
                       `;
             break;
         case "about":
