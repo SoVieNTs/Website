@@ -1,5 +1,3 @@
-const BUGS_CHANNEL = "https://discord.com/api/webhooks/795180218914439218/9y0f6Mip_GHlgjXxfddj7qmUZE_wE0RBIloTpbWIFI2NZCVTeb8iuzeK_yLbFJiga6WP";
-const SUGGEST_CHANNEL = "https://discord.com/api/webhooks/795180044866551839/uSL8aWwUqXdX2iQW4oyivwldmGxuqGAtiVOflxeqep16nsJ0iGIiNi0k5dBFxOedVq4C";
 changeView("about");
 
 function changeView(type, title) {
@@ -17,7 +15,7 @@ function changeView(type, title) {
                     <p>Have you found a Bug? If so submit it here and join our Support Server to tell us more information, so we can make Fusion as perfect as possible.</p>
                         <input id="username" type="text" placeholder="Discord Username + Tag" class="field"><br><br>
                         <input id="text" type="text" placeholder="Bug to Report" class="field"><br><br>
-                        <button type="button" onClick="sendHook(BUGS_CHANNEL, 'username', 'text', 'Fusion Bugs', 'https://cdn.discordapp.com/avatars/752595663732211831/ef253574485aa8b67a66eb2a585e771e.png?size=512', 'Please specify a valid Discord username with Tag.', 'Please specify the bug you would like to report.', 'Fusion 🌀 Bug')" class="button">🚀 Report Bug</button>
+                        <button type="button" onClick="sendHook("https://discord.com/api/webhooks/795180218914439218/9y0f6Mip_GHlgjXxfddj7qmUZE_wE0RBIloTpbWIFI2NZCVTeb8iuzeK_yLbFJiga6WP", 'username', 'text', 'Fusion Bugs', 'https://cdn.discordapp.com/avatars/752595663732211831/ef253574485aa8b67a66eb2a585e771e.png?size=512', 'Please specify a valid Discord username with Tag.', 'Please specify the bug you would like to report.', 'Fusion 🌀 Bug')" class="button">🚀 Report Bug</button>
                   `;
             break;
         case "suggest":
@@ -26,7 +24,7 @@ function changeView(type, title) {
                         <p>If you have any ideas that will improve Fusion, submit them here or join our Support Server.</p>
                             <input id="username" type="text" placeholder="Discord Username + Tag" class="field"><br><br>
                             <input id="text" type="text" placeholder="Suggestion to Submit" class="field"><br><br>
-                                <button type="button" onClick="sendHook(SUGGEST_CHANNEL, 'username', 'text', 'Fusion Suggestions', 'https://cdn.discordapp.com/avatars/752595663732211831/ef253574485aa8b67a66eb2a585e771e.png?size=512', 'Please specify a valid Discord username with Tag.', 'Please specify the suggestion you would like to submit!', 'Fusion 🌀 Suggestion')" class="button">🚀 Submit Suggestion</button>
+                                <button type="button" onClick="sendHook("https://discord.com/api/webhooks/795180044866551839/uSL8aWwUqXdX2iQW4oyivwldmGxuqGAtiVOflxeqep16nsJ0iGIiNi0k5dBFxOedVq4C", 'username', 'text', 'Fusion Suggestions', 'https://cdn.discordapp.com/avatars/752595663732211831/ef253574485aa8b67a66eb2a585e771e.png?size=512', 'Please specify a valid Discord username with Tag.', 'Please specify the suggestion you would like to submit!', 'Fusion 🌀 Suggestion')" class="button">🚀 Submit Suggestion</button>
                       `;
             break;
         case "about":
