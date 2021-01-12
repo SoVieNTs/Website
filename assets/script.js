@@ -21,7 +21,7 @@ function changeView(type, title) {
         case "suggest":
             content.innerHTML = `
                     <h1>Submit a Suggestion</h1>
-                        <p>If you have any ideas that will improve Fusion, submit them here or join our Support Server.</p>
+                        <p>If you have any ideas that will improve Quantum, submit them here or join our Support Server.</p>
                             <input id="username" type="text" placeholder="Discord Username + Tag" class="field"><br><br>
                             <input id="text" type="text" placeholder="Suggestion to Submit" class="field"><br><br>
                                 <button type="button" onClick="sendHook("https://discord.com/api/webhooks/795180044866551839/uSL8aWwUqXdX2iQW4oyivwldmGxuqGAtiVOflxeqep16nsJ0iGIiNi0k5dBFxOedVq4C", 'username', 'text', 'Fusion Suggestions', 'https://cdn.discordapp.com/avatars/752595663732211831/ef253574485aa8b67a66eb2a585e771e.png?size=512', 'Please specify a valid Discord username with Tag.', 'Please specify the suggestion you would like to submit!', 'Fusion 🌀 Suggestion')" class="button">🚀 Submit Suggestion</button>
@@ -30,7 +30,7 @@ function changeView(type, title) {
         case "about":
             content.innerHTML = `
                 <h1>About</h1>
-                    <p>Fusion includes so many great features such as reaction roles, starboard, fun commands that get your whole server giggling and last but not least moderation. Super simple'n'efficient ready to use however you'd like too, made to improve your Discord Server!</p>
+                    <p>Quantum includes so many great features such as reaction roles, starboard, fun commands that get your whole server giggling and last but not least moderation. Super simple'n'efficient ready to use however you'd like too, made to improve your Discord Server!</p>
                       <h3>Here are the commands you can use with Fusion.</h3>
                         <p class="commands">🌍 General: <br><code>reverse</code>, <code>search</code>, <code>encrypt</code>, <code>decrypt</code>, <code>ping</code></p>
                         <p class="commands">🛠️ Moderation: <br><code>warn</code>, <code>ban</code>, <code>kick</code>, <code>clear</code>, <code>avatar</code>, <code>profile</code>, <code>server</code>, <code>someone</code>, <code>rr-add</code>, <code>starboard</code></p>
